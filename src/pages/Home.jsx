@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import background from "../assets/bkg.jpg";
+import { AnimateText } from "../components/AnimateText";
 
 export const Home = () => {
   //
@@ -21,7 +22,9 @@ export const Home = () => {
           exit={{ opacity: 0 }}
         >
           {/* left column */}
-          <p className="uppercase tracking-loose w-full">Martial World</p>
+          <p className="uppercase tracking-loose w-full">
+            <AnimateText text={"Martial World"} />
+          </p>
           <h1 className="my-4 text-5xl font-bold leading-tight">
             Best place to read!
           </h1>
